@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main-box">
+		<div class="box2">
+			<h1 class="first">Todo App</h1>
+			<div class="box3">
+
+				<div class="content1">
+					<h3>Daily tasks</h3><br>
+
+					<div class="box4">
+					     <form>
+							<input type="datetime-local" id="input1" class="inp-s">
+							<input type="text" id="input2" class="inp-s" placeholder="enter your task">
+							<div class="inp-check">
+								<label for="input3">Alarm: </label>
+							    <input type="checkbox" name="input3" id="input3" checked>
+							</div>
+	                   		<button class="addtsk" type="submit">Add Task</button>
+						 </form><br><hr><br>
+						 <h3>Your Tasks: </h3>
+	                    <div class="table-box">
+							<table>
+							<thead >
+							    <tr class="table-row">
+									<th class="t-heading">Delete</th>
+								   <th class="t-heading">Time</th>
+								   <th class="t-heading">Task Name</th>
+								   <th class="t-heading">Alarm</th>
+							    </tr>
+							</thead> 
+							<tbody>
+								<tr class="table-row">
+									<td class="delete"><i class="fa-solid fa-trash"></i></td>
+								   <td>27-12-2024T02:00</td>
+								   <td>Sleep</td>
+								   <td>Alarm</td>
+							    </tr>
+								<tr class="table-row">
+									<td class="delete"><i class="fa-solid fa-trash"></i></td>
+								   <td>27-12-2024T02:00</td>
+								   <td>Read</td>
+								   <td>Alarm</td>
+							    </tr>
+							</tbody>
+						</table>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
