@@ -26,6 +26,22 @@ body{
 	gap: 10px;
 	white-space: nowrap;
 }
+.scroller::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background-color: #d4c685;
+    border-radius: 4px;
+}
+.scroller::-webkit-scrollbar-thumb:hover {
+    background-color: #f3db07;
+}
+.scroller::-webkit-scrollbar-track {
+    background-color: #0d0d0d; /* Scrollbar track color */
+}
+
 img{
 	height: 100px;
 	width: 140px;
@@ -35,15 +51,26 @@ img{
     justify-content: center;
     border-radius: 5px;
     text-align: center;
+	transition-duration: 0.8s;
 }
+img:hover{
+	box-shadow: 2px 2px 8px white;
+	height: 94px;
+	width: 136px;
+	opacity: 0.6;
+}
+
 .box2{
 	margin-top: 160px;
    background-color: rgba(43, 43, 52, 0.267);
+   background-image: url("gift3.gif");
+   background-size: cover;
    padding: 40px;
    border: 1px solid black;
    border-radius: 20px;
    text-align: center;
 }
+
 .inp-s, button{
 	background-color: rgba(25, 25, 32, 0.267);
 	border: 1px solid white;
@@ -94,7 +121,7 @@ i{
 @media(max-width: 390px){
 	.box1{
 	padding: 10px;
-	height: 60px;
+	height: 80px;
 	width: 100%;
 	background-color: black; 
 }
@@ -105,8 +132,8 @@ i{
 	white-space: nowrap;
 }
 img{
-	height: 60px;
-	width: 80px;
+	height: 80px;
+	width: 100px;
 	 display: flex;
     align-items: center;
     justify-content: center;
@@ -114,12 +141,20 @@ img{
     text-align: center;
 	background-size: cover;
 }
+img:hover{
+	box-shadow: 0px 0px 4px white;
+	height: 76px;
+	width: 96px;
+	opacity: 0.6;
+}
+
  .box2{
     background-color: rgba(43, 43, 52, 0.267);
     padding: 10px;
-	 border: 1px solid black;
-   border-radius: 5px;
-   text-align: center;
+	background-image: url("gift3.gif");
+	border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
   }
   .inp-s,button, .inp-check{
 	display: block;
