@@ -1,3 +1,11 @@
+let box2 = document.querySelector(".box2");
+for (let i = 1; i <= 12; i++) {
+  let bgimg = document.querySelector(`.bgimg${i}`);
+  bgimg.onclick = function () {
+    box2.style.backgroundImage = `url("desktop${i}.jpg")`;
+  };
+}
+
 let form = document.querySelector("form");
 
 let table = document.querySelector("table");
